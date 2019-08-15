@@ -9,14 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/sdm845-common/sdm845-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/onclite/onclite-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Properties
--include $(LOCAL_PATH)/common-props.mk
+-include $(LOCAL_PATH)/device-props.mk
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -47,10 +47,6 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
-# Fingerprint
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fingerprint/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845.rc:system/etc/init/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845.rc
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -71,7 +67,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_sdm845
+    android.hardware.light@2.0-service.xiaomi_msm8953
 
 # Media
 PRODUCT_COPY_FILES += \

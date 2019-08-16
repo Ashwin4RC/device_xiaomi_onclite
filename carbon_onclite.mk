@@ -11,7 +11,9 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-TARGET_BOOT_ANIMATION_RES := 720
+# Boot animation
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1520
 
 # Inherit some common CarbonROM stuff.
 $(call inherit-product, vendor/carbon/config/common.mk)

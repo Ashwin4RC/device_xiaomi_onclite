@@ -43,7 +43,7 @@ TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CONFIG := onclite-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/onclite
-
+KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 
 # Platform
 #TARGET_BOARD_PLATFORM := msm8953

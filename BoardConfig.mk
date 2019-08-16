@@ -44,6 +44,7 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CONFIG := onclite-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/onclite
 
+
 # Platform
 #TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506

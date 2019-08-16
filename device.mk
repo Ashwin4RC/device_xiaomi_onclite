@@ -137,6 +137,3 @@ WIFI_HIDL_FEATURE_AWARE := true
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
